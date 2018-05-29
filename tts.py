@@ -1,1 +1,10 @@
-# Text to Speech Engine
+import androidhelper
+droid = androidhelper.Android()
+line = droid.dialogGetInput()
+s = "Hello, %s" % (line.result,)
+droid.makeToast(s)
+# pregunta=input("--->")
+droid.ttsSpeak(s)
+result=droid.recognizeSpeech("Habla ahora")
+print (result[1])
+droid.startActivity('android.intent.action.VIEW','http://www.google.ec/search?q='+result[1])
