@@ -1,0 +1,74 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPd4SQupK5OFbBFGS6V/MB5",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/mleyvaz/AV/blob/master/IMC\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Cálculo del indice de la masa corporal"
+      ],
+      "metadata": {
+        "id": "OwRzpGYwGLde"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 6,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "cellView": "form",
+        "id": "Jc7jAYkZGIxT",
+        "outputId": "153825e0-6480-4f68-d735-54228d26908b"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "75.0\n"
+          ]
+        }
+      ],
+      "source": [
+        "#@title Cálculo del IMC { run: \"auto\" }\n",
+        "estatura = 1.80 #@param {type:\"number\"}\n",
+        "peso = 75 #@param {type:\"number\"}\n",
+        "imc=peso/estatura**2\n",
+        "print(imc)\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "przfrtoJGKRx"
+      }
+    }
+  ]
+}
